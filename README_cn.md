@@ -134,3 +134,7 @@ Thanks goes to these wonderful people:
 ---
 
 > [@博客](https://nn.ci/) · [@GitHub](https://github.com/Xhofe) · [@Telegram群](https://t.me/alist_chat) · [@Discord](https://discord.gg/F4ymsH4xv2)
+
+
+## 自编译说明
+-只是简单将离线下载任务监视数量从3提高到了30以尝试在提高带宽利用率的同时让alist能监测到。避免下载完成但是alist还显示等待中不上传（下载工具设置成同时最大下载数量为30最佳）

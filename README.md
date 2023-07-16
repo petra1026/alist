@@ -136,3 +136,6 @@ The `AList` is open-source software licensed under the AGPL-3.0 license.
 ---
 
 > [@Blog](https://nn.ci/) · [@GitHub](https://github.com/Xhofe) · [@TelegramGroup](https://t.me/alist_chat) · [@Discord](https://discord.gg/F4ymsH4xv2)
+
+## Self-compiling specification
+-Simply increased the number of offline download task monitors from 3 to 30 to try to improve bandwidth utilization while allowing alist to monitor. Avoid download completion but alist also shows no upload while waiting (the download tool is set to the maximum number of simultaneous downloads is 30)
