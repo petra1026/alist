@@ -12,7 +12,7 @@ import (
 	log "github.com/sirupsen/logrus"
 )
 
-var DownTaskManager = task.NewTaskManager[string](3)
+var DownTaskManager = task.NewTaskManager[string](30)
 var notify = NewNotify()
 var client rpc.Client
 

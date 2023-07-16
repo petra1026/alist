@@ -6,7 +6,7 @@ import (
 	"github.com/alist-org/alist/v3/pkg/task"
 )
 
-var DownTaskManager = task.NewTaskManager[string](3)
+var DownTaskManager = task.NewTaskManager[string](30)
 var qbclient Client
 
 func InitClient() error {

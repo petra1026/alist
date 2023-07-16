@@ -123,7 +123,7 @@ func (m *Monitor) Update() (bool, error) {
 	}
 }
 
-var TransferTaskManager = task.NewTaskManager(3, func(k *uint64) {
+var TransferTaskManager = task.NewTaskManager(30, func(k *uint64) {
 	atomic.AddUint64(k, 1)
 })
 
