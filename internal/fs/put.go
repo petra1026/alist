@@ -13,6 +13,7 @@ import (
 	"github.com/pkg/errors"
 )
 
+// 从本地上传的最大同时上传任务数量
 var UploadTaskManager = task.NewTaskManager(3, func(tid *uint64) {
 	atomic.AddUint64(tid, 1)
 })

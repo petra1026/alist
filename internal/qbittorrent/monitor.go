@@ -99,7 +99,8 @@ func (m *Monitor) update() (bool, error) {
 	return true, errors.New("unknown error occurred downloading qbittorrent") // should never happen
 }
 
-var TransferTaskManager = task.NewTaskManager(30, func(k *uint64) {
+// 最大同时转存/上传任务数量
+var TransferTaskManager = task.NewTaskManager(3, func(k *uint64) {
 	atomic.AddUint64(k, 1)
 })
 

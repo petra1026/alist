@@ -6,6 +6,7 @@ import (
 	"github.com/alist-org/alist/v3/pkg/task"
 )
 
+// 最大同时下载监视(监测)任务数量
 var DownTaskManager = task.NewTaskManager[string](30)
 var qbclient Client
 

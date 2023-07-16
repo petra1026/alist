@@ -12,6 +12,7 @@ import (
 	log "github.com/sirupsen/logrus"
 )
 
+// 最大同时下载监视(监测)任务数量
 var DownTaskManager = task.NewTaskManager[string](30)
 var notify = NewNotify()
 var client rpc.Client
