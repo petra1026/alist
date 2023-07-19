@@ -100,7 +100,7 @@ func (m *Monitor) update() (bool, error) {
 }
 
 // 最大同时转存/上传任务数量
-var TransferTaskManager = task.NewTaskManager(6, func(k *uint64) {
+var TransferTaskManager = task.NewTaskManager(8, func(k *uint64) {
 	atomic.AddUint64(k, 1)
 })
 

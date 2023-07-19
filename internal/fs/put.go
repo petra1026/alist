@@ -14,7 +14,7 @@ import (
 )
 
 // 从本地上传的最大同时上传任务数量
-var UploadTaskManager = task.NewTaskManager(6, func(tid *uint64) {
+var UploadTaskManager = task.NewTaskManager(8, func(tid *uint64) {
 	atomic.AddUint64(tid, 1)
 })
 

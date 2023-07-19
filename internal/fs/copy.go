@@ -17,7 +17,7 @@ import (
 )
 
 //同时复制的数量
-var CopyTaskManager = task.NewTaskManager(6, func(tid *uint64) {
+var CopyTaskManager = task.NewTaskManager(8, func(tid *uint64) {
 	atomic.AddUint64(tid, 1)
 })
 
