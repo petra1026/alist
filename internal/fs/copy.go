@@ -16,7 +16,8 @@ import (
 	log "github.com/sirupsen/logrus"
 )
 
-var CopyTaskManager = task.NewTaskManager(3, func(tid *uint64) {
+//同时复制的数量
+var CopyTaskManager = task.NewTaskManager(6, func(tid *uint64) {
 	atomic.AddUint64(tid, 1)
 })
 
